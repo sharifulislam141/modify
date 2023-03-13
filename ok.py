@@ -18,36 +18,26 @@ fg  =   Fore.GREEN
 
 banner = '''{}
 
-TooL Free Priv H0rn3t sp1d3rs 
+ 
+  _                 _         _                     _         
+ |_) ._ o      |_| / \ ._ ._  _) _|_    _ ._ /|  _| _) ._ _   
+ |   |  | \/   | | \_/ |  | | _)  |_   _> |_) | (_| _) | _>   
+                                          |                   
+
 
 \n'''.format(fr)
 
-print banner
+print (banner)
 
 requests.urllib3.disable_warnings()
 
 
 
-try:
-
-    target = [i.strip() for i in open(sys.argv[1], mode='r').readlines()]
-
-except IndexError:
-
-    path = str(sys.argv[0]).split('\\')
-
-    exit('\n  [!] Enter <' + path[len(path) - 1] + '> <sites.txt>')
-
-
-
-
-
-
-
-
+ 
+filename = input("Enter file name > ")
+target = open(filename).read().split()
 
  
-
 class MyVzla:
 
 	def __init__(self):
